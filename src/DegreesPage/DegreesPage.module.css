@@ -1,0 +1,71 @@
+.degreesPage {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 950px;
+    min-width: 500px;
+}
+
+table thead th {
+    background-color: #326cb1;
+    color: white;
+    width: 185px;
+    height: 30px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #eff8ff;
+}
+
+table tr {
+    text-transform: capitalize;
+}
+
+.tableHeader {
+    text-align: center;
+}
+
+.degreeImage {
+    width: 60%;
+    padding: 5% 15%;
+}
+
+.degreeTitle {
+    text-decoration: underline;
+    line-height: 25px;
+    color: #003399;
+}
+
+.schoolList {
+    padding-left: 16px;
+    line-height: 30px;
+}
+
+/*filter*/
+.sorterFilter {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    color: #4b4b4b;
+    text-align: center;
+}
+
+.sorterFilter header {
+    padding: 10px;
+}
+
+select {
+    width: 200px;
+}
+
+@media (max-width: 900px) {
+    .sorterFilter {
+        flex-flow: column;
+        align-items: center;
+    }
+}

@@ -8,7 +8,10 @@ const EnrollForm = ({ onSubmit }) => {
 
       <div><input type="text" name="foo" /></div>
       <div><input type="text" name="bar" /></div>
-      <div><input type="text" name="baz" /></div>
+      <div><input type="text" name="baz" />name</div>
+        <input type={"checkbox"}  value={"ai"}/>
+        <input type={"checkbox"}  value={"ds"}/>
+        <input type={"checkbox"}  value={"db"}/>
       <input type="submit" value="Submit enrollment" />
     </form>
   );

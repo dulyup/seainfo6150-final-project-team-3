@@ -1,0 +1,44 @@
+.schoolGrid {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 30px;
+    min-width: 500px;
+    max-width: 950px;
+}
+
+.schoolName {
+    font-weight: bold;
+    color: #003399;
+}
+
+.schoolImg {
+    width: 100%;
+    height: 160px;
+    padding-top: 0;
+}
+
+.degreeList {
+    padding-left: 16px;
+    text-decoration: underline;
+    line-height: 25px;
+    color: #003399;
+}
+
+@media(max-width: 1140px) {
+    .schoolGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 50px;
+    }
+}
+
+@media(max-width: 785px) {
+    .schoolGrid {
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+    .schoolImg {
+        height: 45%;
+    }
+}

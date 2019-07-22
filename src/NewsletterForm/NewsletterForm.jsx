@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import style from "./NewsletterForm.module.css"
+
 class NewsletterForm extends Component {
   constructor(props) {
     super(props);
@@ -16,12 +18,17 @@ class NewsletterForm extends Component {
 
   render() {
     return this.state.submitted ? (
-      <div>Thank you!</div>
+      <div className={style.result}>Succeed, thank you!</div>
     ) : (
-      <form onSubmit={this.onSubmit}>
-        <input type="text" name="email-address" />
-        <input type="submit" value="Sign up" />
-      </form>
+        <div className={style.newsletterBox}>
+            <img src={"images/campus3.jpg"} alt={"campus"} className={style.pic}/>
+            <form className={style.form} onSubmit={this.onSubmit}>
+                <div className={style.sloganUp}>Never miss an update</div>
+                <div className={style.sloganDown}>Sign up and get newsletters</div>
+                <input type={"email"} name={"emailAddress"} placeholder={"Email Address *"} className={style.email} required/>
+                <button className={style.signUp}>Sign up</button>
+            </form>
+        </div>
     )
   }
 }

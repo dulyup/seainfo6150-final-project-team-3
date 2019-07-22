@@ -1,0 +1,33 @@
+hr {
+    align-items: center;
+    width: 70%;
+    min-width: 500px;
+    max-width: 950px;
+}
+
+footer hr {
+    margin-top: 50px;
+}
+
+.footer {
+    color: #636363;
+    font-size: 12px;
+}
+
+.footerNav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 20px;
+    min-width: 400px;
+    max-width: 1500px;
+}
+
+address {
+    margin: 0 auto;
+    width: 190px;
+    padding: 20px 0 20px 0;
+}

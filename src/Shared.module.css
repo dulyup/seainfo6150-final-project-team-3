@@ -1,0 +1,43 @@
+.title {
+    width: 70%;
+    margin: 0 auto 10px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 100px;
+    color: white;
+    font-size: 30px;
+    background-image: url("/images/graduation.jpeg");
+    opacity: 0.7;
+    min-width: 500px;
+    max-width: 950px;
+}
+
+.homeAboutPage {
+    text-align: center;
+}
+
+.image {
+    width: 70%;
+    min-width: 500px;
+    max-width: 950px;
+}
+
+.description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+    min-width: 520px;
+    max-width: 950px;
+}
+
+i {
+    font-weight: bold;
+}
+
+h1 {
+    display: inline;
+}
