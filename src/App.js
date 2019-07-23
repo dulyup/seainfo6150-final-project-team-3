@@ -85,10 +85,10 @@ function App() {
             <Route path="/about" exact component={AboutPage} />
             <Route path="/thankyou" exact component={ThankyouPage} />
             <Route path="/contact" exact component={ContactPage} />
-            {/*<Route path="/signup"*/}
-                   {/*exact*/}
-                   {/*render={() => <SignUpPage degrees={degrees} />}*/}
-            {/*/>*/}
+            <Route path="/signup"
+                   exact
+                   render={() => <SignUpPage degrees={degrees} />}
+            />
             <Route component={ErrorPage} />
           </Switch>
         </main>
