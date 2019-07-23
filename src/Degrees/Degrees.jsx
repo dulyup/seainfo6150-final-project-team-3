@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 import style from "../DegreesPage/DegreesPage.module.css";
 
-const Degrees = ({degrees}) => {
+const Degrees = ({degrees, schools}) => {
   return (
     <div className={style.table}>
       <table>
@@ -29,11 +29,14 @@ const Degrees = ({degrees}) => {
               <td>{degree.level}</td>
               <td>
                 <ul className={style.schoolList}>
-                  {degree.schools.map((school, index) => (
-                    <li>
-                      {school.replace(/-/g, ' ')}
-                    </li>
-                  ))}
+                  {
+                    thisDegreesSchools(schools, degree)
+                      .map((school, index) => (
+                      <li>
+                        {school.name}
+                      </li>
+                    ))
+                  }
                 </ul>
               </td>
             </tr>
@@ -44,6 +47,12 @@ const Degrees = ({degrees}) => {
     </div>
   );
 };
+
+function thisDegreesSchools (schools, degree) {
+  return schools.filter(school =>
+    degree.schools.includes(school.slug)
+  );
+}
 
 Degrees.propTypes = {
   degrees: PropTypes.array.isRequired

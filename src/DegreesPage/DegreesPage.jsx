@@ -103,7 +103,7 @@ class DegreesPage extends Component {
             />
             <section>
               {/*<header>Title Level Schools</header>*/}
-              <Degrees degrees={displayDegrees} />
+              <Degrees degrees={displayDegrees} schools={this.props.schools}/>
             </section>
           </div>
         </div>
