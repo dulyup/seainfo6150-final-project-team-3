@@ -1,0 +1,11 @@
+.enrollPage {
+
+    margin: 0 auto;
+    min-width: 447px;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(83, 82, 79);
+}
