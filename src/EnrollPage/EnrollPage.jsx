@@ -23,7 +23,6 @@ class EnrollPage extends Component {
   };
 
   render() {
-    console.log(this.props)
     return (
       <div className={style.enrollPage}>
         <p className={style.title}>{this.props.degree.title}</p>
