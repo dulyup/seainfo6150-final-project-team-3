@@ -1,0 +1,17 @@
+.errorPage {
+    color: #4b4b4b;
+    width: 45%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 100px 0;
+    font-size: 18px;
+}
+
+.search {
+    width: 100%;
+}
+
+.visitHome {
+    font-size: 12px;
+    line-height: 50px;
+}

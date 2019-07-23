@@ -1,0 +1,28 @@
+.calendar {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 60px;
+    color: #4b4b4b;
+    min-width: 500px;
+    max-width: 950px;
+}
+
+time {
+    font-weight: bold;
+    color: #003399;
+}
+
+@media (max-width: 830px) {
+    .calendar {
+        grid-template-columns: 1fr;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .calendar {
+        width: 70%;
+    }
+}

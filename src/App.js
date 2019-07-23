@@ -17,6 +17,8 @@ import ErrorPage from "./ErrorPage/ErrorPage";
 import HomePage from "./HomePage/HomePage";
 import SchoolsPage from "./SchoolsPage/SchoolsPage";
 import ThankyouPage from"./ThankyouPage/ThankyouPage";
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 // data
 import dates from "./data/calendar.json";
@@ -28,8 +30,9 @@ function App() {
     <div className="App">
       <Router>
         <header>
-          This is a page header that will persist on every page
-          <hr />
+            <Header/>
+          {/*This is a page header that will persist on every page*/}
+          {/*<hr />*/}
         </header>
         <main>
           <Switch>
@@ -84,8 +87,9 @@ function App() {
           </Switch>
         </main>
         <footer>
-          <hr />
-          This is a page footer that will persist on every page
+          {/*<hr />*/}
+          {/*This is a page footer that will persist on every page*/}
+          <Footer/>
         </footer>
       </Router>
     </div>

@@ -134,7 +134,6 @@ const EnrollForm = ({onSubmit, degrees}) => {
               <input type="submit" name="Submit Condition" value="Submit" />
           </div>
      </form>
-
   );
 };
 

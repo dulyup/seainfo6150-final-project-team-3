@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 import Degrees from "../Degrees/Degrees";
 import DegreesSorterFilterer from "../DegreesSorterFilterer/DegreesSorterFilterer";
 
+import style from "./DegreesPage.module.css";
+import sharedStyle from "../Shared.module.css";
+
 class DegreesPage extends Component {
   constructor(props) {
     super(props);
@@ -89,17 +92,21 @@ class DegreesPage extends Component {
 
     return (
       <div>
-        This is the Degrees page
-
-        <DegreesSorterFilterer
-          onFilter={this.onFilter}
-          onSort={this.onSort}
-          schools={this.props.schools}
-        />
-        <section>
-          <header>Degrees</header>
-          <Degrees degrees={displayDegrees} />
-        </section>
+        <hr/>
+        <div>
+          <h2 className={sharedStyle.title}>Degrees</h2>
+          <div className={style.degreesPage}>
+            <DegreesSorterFilterer
+              onFilter={this.onFilter}
+              onSort={this.onSort}
+              schools={this.props.schools}
+            />
+            <section>
+              {/*<header>Title Level Schools</header>*/}
+              <Degrees degrees={displayDegrees} schools={this.props.schools}/>
+            </section>
+          </div>
+        </div>
       </div>
     );
   }
