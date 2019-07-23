@@ -1,9 +1,9 @@
 .container{
-    margin-top:20px;
     margin: 0 auto;
     width: 70%;
     display: grid;
     grid-template-rows: 1fr 0.2fr 1fr;
+    padding-top: 5px;
 }
 
 .firstRow{
@@ -19,9 +19,7 @@
 }
 .Summary{
     text-align: justify;
-    padding-left: 25%;
-    padding-right: 25%;
-    font-size: 18px;
+    padding: 20px 25%;
     color:  #636262;
 }
 
@@ -33,7 +31,6 @@
     display: flex;
     justify-content: space-evenly;
     background-color: #326cb1;
-    font-size: 20px ;
     padding: 8px;
 }
 
@@ -54,18 +51,17 @@
 }
 .schools{
     text-align: left;
-    font-size:19px;
-    /* list-style-type: none; */
     margin-top: 0;
 }
 
 .DegreeTitle{
     color: rgb(83, 82, 79);
+    font-size: 18px;
 }
 
 .enrollLink{
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 16px;
     width: 100px;
     color: white;
     background-color:#003399;

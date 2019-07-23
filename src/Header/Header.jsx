@@ -12,8 +12,8 @@ const Header = () => {
         </Link>
         <div>
           <input type={"text"} placeholder={"search"}/>
-          <Link to={"/signup"} className={style.signUp}>Sign up</Link>
-          <Link to={"/signin"}>Sign in</Link>
+          {/*<Link to={"/signup"} className={style.signUp}>Sign up</Link>*/}
+          {/*<Link to={"/signin"}>Sign in</Link>*/}
         </div>
       </div>
       <nav className={style.headerNav}>
