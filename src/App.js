@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // nav
-import MainNav from "./MainNav/MainNav";
+// import MainNav from "./MainNav/MainNav";
 
 // pages
 import AboutPage from "./AboutPage/AboutPage";
@@ -19,11 +19,13 @@ import SchoolsPage from "./SchoolsPage/SchoolsPage";
 import ThankyouPage from"./ThankyouPage/ThankyouPage";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import SignUpPage from "./SignUpPage/SignUpPage";
 
 // data
 import dates from "./data/calendar.json";
 import schools from "./data/schools.json";
 import degrees from "./data/degrees.json";
+
 
 function App() {
   return (
@@ -83,6 +85,10 @@ function App() {
             <Route path="/about" exact component={AboutPage} />
             <Route path="/thankyou" exact component={ThankyouPage} />
             <Route path="/contact" exact component={ContactPage} />
+            {/*<Route path="/signup"*/}
+                   {/*exact*/}
+                   {/*render={() => <SignUpPage degrees={degrees} />}*/}
+            {/*/>*/}
             <Route component={ErrorPage} />
           </Switch>
         </main>
