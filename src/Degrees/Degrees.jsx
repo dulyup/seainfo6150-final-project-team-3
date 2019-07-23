@@ -32,7 +32,7 @@ const Degrees = ({degrees, schools}) => {
                   {
                     thisDegreesSchools(schools, degree)
                       .map((school, index) => (
-                      <li>
+                      <li key={index}>
                         {school.name}
                       </li>
                     ))

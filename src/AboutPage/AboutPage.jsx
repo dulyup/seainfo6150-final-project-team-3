@@ -7,12 +7,10 @@ const AboutPage = () => {
     <div className={sharedStyle.homeAboutPage}>
       <img src={"images/campus1.jpg"} alt={"campus"} className={sharedStyle.image}/>
       <div className={sharedStyle.description}>
-        <p>
-          <h1>S</h1>
-          eattle Technological University is known for the excellence of our
-          education, the beauty of our setting, our gifted faculty, and the
-          uniqueness of our campus culture.
-        </p>
+        <h1>S</h1>
+        eattle Technological University is known for the excellence of our
+        education, the beauty of our setting, our gifted faculty, and the
+        uniqueness of our campus culture.
         <i>A Transformative Educational Experience </i><br/>
         <p>
           Every year, some 2,400 of the world’s top undergraduate students are
