@@ -12,7 +12,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}> 
-            <input type="text" name="Full Name"  />
+            <input type="text" name="Full Name" required className={enrollFormStyle.input}/>
           </div>
         </div>
         
@@ -21,8 +21,8 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="emailAddress">Email Address</label>
             <span className={enrollFormStyle.required}>*</span>
           </div>
-          <div className={enrollFormStyle.right}>
-            <input type="email" id="email" name="Email Address" placeholder="foo@bar.com"  />
+          <div className={enrollFormStyle.right} > 
+          <input type="email" id="email" name="Email Address" placeholder="foo@bar.com" className={enrollFormStyle.input}/>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <select name="State" >
+            <select name="State" required>
             <option value="none"></option>
               <option value="WA">Washington</option>
               <option value="NY">NewYork</option>
@@ -46,7 +46,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
           <label htmlFor="streetAddress" >Street Address</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <input type="text" name="Street Address" />
+            <input type="text" name="Street Address" required className={enrollFormStyle.input} />
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="city" >City</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <input type="text" name="City"  />
+            <input type="text" name="City" required className={enrollFormStyle.input} />
           </div>
         </div>
           
@@ -64,7 +64,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="zipcode" >Zipcode</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <input type="text" name="ZipCode" pattern="[0-9]{5}"  />
+            <input type="text" name="ZipCode" pattern="[0-9]{5}" required className={enrollFormStyle.input} />
           </div>
         </div>
 
@@ -73,7 +73,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="phoneNumber" >Phone Number</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+            <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required className={enrollFormStyle.input}/>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="birthDate" >Date Of Birth</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}>
-            <input id="date" name="Birth Date" type="date" />
+            <input id="date" name="Birth Date" type="date" required className={enrollFormStyle.input}/>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="gender">Gender</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}> 
-            <select id="gender" name="Gender" >
+            <select id="gender" name="Gender" required  >
             <option value="none"></option>
             <option value="Female">Female</option>
             <option value="Male">Male</option>
@@ -106,7 +106,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
             <label htmlFor="pronouns">Preferred Pronouns</label><span className={enrollFormStyle.required}>*</span>
           </div>
           <div className={enrollFormStyle.right}> 
-            <select id="pronouns" name="Pronouns" >
+            <select id="pronouns" name="Pronouns" required >
               <option value="none"></option>
               <option value="she/her">she/her</option>
               <option value="he/him">he/him</option>
@@ -120,10 +120,10 @@ const EnrollForm = ({onSubmit, degrees}) => {
           <div className={enrollFormStyle.left}>
             <label htmlFor="degrees">Preferred Degrees</label><span className={enrollFormStyle.required}>*</span>
           </div>
-           <div className={enrollFormStyle.checkbox}> 
+           <div className={enrollFormStyle.checkbox}   > 
                {degrees.map((degree, index) => (
                 <p key={index}>
-                  <input type="checkbox" name="Preferred Degrees" key={degree.slug} value={degree.title}/>
+                  <input type="checkbox" name="Preferred Degrees"  key={degree.slug} value={degree.title}/>
                   {degree.title}
                 </p>
               ))}       
@@ -131,7 +131,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
           </div>
         
           <div className={enrollFormStyle.submit}>
-              <input type="submit" name="Submit Condition" value="Submit" />
+              <input type="submit" name="Submit Condition" value="Submit" className={enrollFormStyle.input} />
           </div>
      </form>
   );
