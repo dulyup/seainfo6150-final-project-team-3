@@ -1,0 +1,114 @@
+.form {
+  margin: 0 auto;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 20px;
+  width: 65%;
+  background-color: rgba(104, 198, 235, 0.274);
+}
+select{
+  width: 85%;
+  padding: 12px;
+  background-color:  rgb(255, 255, 255);
+  border:none;
+  border-radius: 8px;
+  resize: vertical;
+  height:38px;
+}
+
+input[type=text],input[type=email],input[type=tel], input[type=date], input[type=date] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border:none;
+  border-radius: 8px;
+  resize: vertical;
+  background-color:  rgb(255, 255, 255);
+  color:  #4b4b4b;
+}
+
+.checkbox{
+  float: right;
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size:  15px;
+  color:  #4b4b4b;
+  
+}
+
+label {
+  color: #4b4b4b;
+  margin-left: 50px;
+  display: inline-block;
+}
+.oneRow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left{
+  width: 30%;
+  margin-top: 10px;
+}
+
+.right{
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lastRow{
+  justify-content:space-around;
+}
+.submit{
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=submit]{
+  color:  #636262;
+  font-size:  16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+}
+
+.left span.required{
+  content: ' *';
+  color: rgb(216, 17, 17);
+  font-size: 70%;
+}
+@media (min-width:1480px){
+    .checkbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    select{
+        width: 83% ;
+    }
+}
+
+  @media  (max-width: 962px) {
+      .oneRow{
+          flex-direction: column;
+      }
+     .right, input[type=submit], .checkbox {
+      width: 90%;
+      margin-top: 6px;
+     margin-left: 10%;
+    }
+    .left{
+        margin-left: 2%;
+        width: 90%;
+        margin-top: 6px;
+    }
+    input[type=submit]{
+      font-size:  16px;
+    }
+  }
+  
+  

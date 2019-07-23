@@ -16,6 +16,7 @@ import EnrollPage from "./EnrollPage/EnrollPage";
 import ErrorPage from "./ErrorPage/ErrorPage";
 import HomePage from "./HomePage/HomePage";
 import SchoolsPage from "./SchoolsPage/SchoolsPage";
+import ThankyouPage from"./ThankyouPage/ThankyouPage";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
@@ -70,6 +71,7 @@ function App() {
                       degree => degree.slug === match.params.slug
                     )[0]
                   }
+                  degrees={degrees}
                 />
               )}
             />
@@ -79,6 +81,7 @@ function App() {
               render={() => <CalendarPage dates={dates} />}
             />
             <Route path="/about" exact component={AboutPage} />
+            <Route path="/thankyou" exact component={ThankyouPage} />
             <Route path="/contact" exact component={ContactPage} />
             <Route component={ErrorPage} />
           </Switch>
