@@ -22,7 +22,7 @@ const Degrees = ({degrees, schools}) => {
             <tr key={`${degree.slug}`} className={style.row}>
               <td><img src={degree.image} alt={degree.title} className={style.degreeImage}/></td>
               <td>
-                <Link to={"/degrees/:" + degree.slug} key={degree.slug} className={style.degreeTitle}>
+                <Link to={"/degree/:" + degree.slug} key={degree.slug} className={style.degreeTitle}>
                   {degree.title}
                 </Link>
               </td>
