@@ -1,0 +1,125 @@
+.container{
+    margin-top:20px;
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 1fr;
+}
+
+.firstRow{
+    grid-column-start: 7;
+    grid-column-end: 15;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Descriptions{
+    flex-direction: column;
+    margin-left: 20px;
+}
+.Summary{
+    text-align: justify;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 18px;
+    color:  #636262;
+}
+
+.secondRow{
+    grid-column-start: 7;
+    grid-column-end: 15;
+    text-align: center;
+    margin-top:20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #326cb1;
+    font-size: 20px ;
+    padding: 8px;
+}
+
+.level {
+    color: white;
+}
+
+.thirdRow{
+    padding-top: 5%;
+    grid-column-start: 7;
+    grid-column-end: 15;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(83, 82, 79);
+    border-left: 1px solid  rgba(104, 198, 235, 0.274);
+    border-right: 1px solid  rgba(104, 198, 235, 0.274);
+}
+.schools{
+    text-align: left;
+    font-size:19px;
+    /* list-style-type: none; */
+    margin-top: 0;
+}
+
+.DegreeTitle{
+    color: rgb(83, 82, 79);
+}
+
+.enrollLink{
+    margin: 0 auto;
+    font-size: 20px;
+    width: 100px;
+    color: white;
+    background-color:#003399;
+    border: none;
+    text-decoration:none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.purple {
+    color: purple;
+}
+.green {
+    color: green;
+}
+@media screen and (max-width:950px){
+    .DegreeTitle{
+        font-size: 19px;
+    }
+    .Summary{
+        height: 66%;
+        text-align:justify;
+        font-size: 15px;
+    }
+    
+}
+@media (max-width:787px){
+    .Summary{
+        height: 10px;
+        visibility: hidden;
+    }
+}
+
+@media  (max-width: 720px) {
+   .firstRow {
+      width: 100%;
+      margin-top: 0;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .image{
+        /* text-align: center; */
+        width: 110%;
+        height: 130%;
+    }
+    .secondRow{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

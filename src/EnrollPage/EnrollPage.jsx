@@ -5,11 +5,13 @@ import { withRouter } from "react-router-dom";
 import EnrollConfirmation from "../EnrollConfirmation/EnrollConfirmation";
 import EnrollForm from "../EnrollForm/EnrollForm";
 
+import style from "./EnrollPage.module.css";
+
 class EnrollPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      form: null
+      form: null,
     };
   }
 
@@ -21,15 +23,15 @@ class EnrollPage extends Component {
   };
 
   render() {
+    console.log(this.props)
     return (
-      <div>
-        {this.props.degree.title}
+      <div className={style.enrollPage}>
+        <p className={style.title}>{this.props.degree.title}</p>
         {this.state.form ? (
           <EnrollConfirmation form={this.state.form} />
         ) : (
-          <EnrollForm onSubmit={this.onSubmit} />
-        )}
-      </div>
+          <EnrollForm onSubmit={this.onSubmit} degrees={this.props.degrees}/>
+        )}</div>
     );
   }
 }

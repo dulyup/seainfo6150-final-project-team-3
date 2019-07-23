@@ -1,0 +1,22 @@
+/* .container{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    
+} */
+
+.displayText{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: rgb(83, 82, 79);
+}
+
+.confirmPage {
+    display: grid;
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgba(104, 198, 235, 0.274);
+    justify-content: center;
+}
