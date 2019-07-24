@@ -21,9 +21,12 @@
 
 .degreeList {
     padding-left: 16px;
-    text-decoration: underline;
     line-height: 25px;
     color: #003399;
+}
+
+.degreeLink:hover {
+    text-decoration: underline;
 }
 
 @media(max-width: 1140px) {
