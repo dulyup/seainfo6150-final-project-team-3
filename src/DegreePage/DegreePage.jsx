@@ -39,7 +39,7 @@ const DegreePage = ({ degree, schools }) => {
               <li key={index}>{school.name}</li>
             ))}
           </ul>
-          <a className={DegreePageStyle.syllabus} href={degree.syllabus_pdf_urls}> Syllabus</a>
+          <a className={DegreePageStyle.syllabus} href={degree.syllabus_pdf_urls}> PDF Link</a>
         </form>
         {/* You should link from here to the enroll page */}
       </div>

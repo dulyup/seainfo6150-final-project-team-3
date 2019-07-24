@@ -70,7 +70,9 @@
     padding: 5px;
     border-radius: 3px;
 }
-
+.syllabus{
+    text-decoration: underline;
+}
 .red {
     color: red;
 }
