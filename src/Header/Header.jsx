@@ -10,11 +10,11 @@ const Header = () => {
         <Link to={"/"}>
           <h1 className={style.logo}>Seattle Technological University</h1>
         </Link>
-        <div>
-          <input type={"text"} placeholder={"search"}/>
+        {/*<div>*/}
+          {/*<input type={"text"} placeholder={"search"}/>*/}
           {/*<Link to={"/signup"} className={style.signUp}>Sign up</Link>*/}
           {/*<Link to={"/signin"}>Sign in</Link>*/}
-        </div>
+        {/*</div>*/}
       </div>
       <nav className={style.headerNav}>
         <Link to="/">Home</Link>
