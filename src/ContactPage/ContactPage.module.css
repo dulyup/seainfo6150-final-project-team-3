@@ -13,17 +13,21 @@
 }
 
 .header{
+    font-size: 20px;
+    margin: 30px auto 0;
     color: rgb(83, 82, 79);
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .page{
+    margin: 30px auto 0;
     display: grid;
     color: rgb(83, 82, 79);
-    grid-row-gap: 30px;
-    grid-column-start:  2;
-    grid-column-end: 3;
+    grid-row-gap: 7px;
+    grid-column-start:  1;
+    grid-column-end: 4;
+    margin-bottom: 60px;
     
 }
 .bigger{
