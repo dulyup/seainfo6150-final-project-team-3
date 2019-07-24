@@ -1,17 +1,26 @@
 .calendar {
     width: 70%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px 60px;
     color: #4b4b4b;
     min-width: 500px;
     max-width: 950px;
 }
 
+.calendarItem {
+    line-height: 30px;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 10px;
+}
+
+.description {
+    margin-left: 20px;
+    border-bottom: #dbdbdb dashed 2px;
+}
+
 time {
     font-weight: bold;
-    color: #003399;
+    color: #489dff;
 }
 
 @media (max-width: 830px) {
