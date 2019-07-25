@@ -5,15 +5,20 @@ import sharedStyle from "../Shared.module.css";
 const AboutPage = () => {
   return (
     <div className={sharedStyle.homeAboutPage}>
-      <img src={"images/campus1.jpg"} alt={"campus"} className={sharedStyle.image}/>
-      <div className={sharedStyle.description}>
-        <h1>S</h1>
-        eattle Technological University is known for the excellence of our
+      <hr/>
+      <p className={sharedStyle.firstPar}>
+        <h3>"</h3>
+        Seattle Technological University is known for the excellence of our
         education, the beauty of our setting, our gifted faculty, and the
         uniqueness of our campus culture.
-        <i>A Transformative Educational Experience </i><br/>
+        <h3>"</h3>
+      </p>
+      <img src={"images/campus1.jpg"} alt={"campus"} className={sharedStyle.image}/>
+      <div className={sharedStyle.description}>
+        <i>A Transformative Educational Experience </i>
         <p>
-          Every year, some 2,400 of the world’s top undergraduate students are
+          <h3>E</h3>
+          very year, some 2,400 of the world’s top undergraduate students are
           challenged to exceed their own highest personal and intellectual
           expectations. The mastery our graduates demonstrate across the
           professional and vocational spectrum, and the influence they wield—whether
@@ -34,9 +39,10 @@ const AboutPage = () => {
           think, act, and contribute meaningfully and effectively in their chosen
           areas of interest.
         </p>
-        <i>The “Full-Engagement” Advantage</i><br/>
+        <i>The “Full-Engagement” Advantage</i>
         <p>
-          Our full-engagement academic philosophy extends to the running of the
+          <h3>O</h3>
+          ur full-engagement academic philosophy extends to the running of the
           College itself. The student voice is central to decision-making here;
           students serve on major committees of the Board of Trustees, participate
           in faculty search, and contribute to strategic planning.
@@ -54,7 +60,8 @@ const AboutPage = () => {
         </p>
         <i>A Widely Envied Campus Environment</i><br/>
         <p>
-          The sheer sense of scale of the breathtaking natural environment, in which
+          <h3>T</h3>
+          he sheer sense of scale of the breathtaking natural environment, in which
           buildings are thoughtfully sited, distinguish our physical setting in the
           classically Northwest town of Seattle, Washington.
         </p>

@@ -10,7 +10,7 @@ const Calendar = ({ dates }) => {
         return (
           <div key={`${date.date}-${index}`} className={style.calendarItem}>
             <time dateTime={date.date}>{date.date}</time>
-            <p>{date.description}</p>
+            <span className={style.description}>{date.description}</span>
           </div>
         );
       })}

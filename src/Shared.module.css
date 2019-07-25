@@ -14,6 +14,16 @@
 
 .homeAboutPage {
     text-align: center;
+    color: #454545;
+    font-size: 18px;
+}
+
+.firstPar {
+    width: 53%;
+    margin: 2rem auto;
+    text-align: center;
+    line-height: 30px;
+    font-family: Charter;
 }
 
 .image {
@@ -25,19 +35,27 @@
 .description {
     width: 70%;
     margin: 0 auto;
-    text-align: justify;
     padding: 20px;
-    font-size: 16px;
-    line-height: 25px;
-    color: black;
+    line-height: 30px;
     min-width: 520px;
     max-width: 950px;
 }
 
-i {
-    font-weight: bold;
+.description p {
+    text-align: justify;
 }
 
-h1 {
+i {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 60px;
+    width: 50%;
+    font-size: 25px;
+    font-family: Charter;
+
+}
+
+h3 {
     display: inline;
 }

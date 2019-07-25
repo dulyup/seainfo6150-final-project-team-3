@@ -25,7 +25,7 @@ const Schools = ({ degrees, schools }) => {
               <ul className={style.degreeList}>
                 {thisSchoolsDegrees.map((degree, index) => (
                   <li key={index}>
-                    <Link to={`/degree/${degree.slug}`} key={degree.slug}>
+                    <Link to={`/degree/${degree.slug}`} key={degree.slug} className={style.degreeLink}>
                       {degree.title}
                     </Link>
                   </li>
