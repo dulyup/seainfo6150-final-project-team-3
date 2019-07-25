@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactPageStyle from "./ContactPage.module.css";
 
+import NewsLetterForm from '../NewsletterForm/NewsletterForm';
 
 const ContactPage = () => {
   return (
@@ -23,8 +24,13 @@ const ContactPage = () => {
           <p>310 Terry Ave N</p>
           <p>Seattle WA, 98109</p>
         </div>
+        
+      </div >
+      <div className ={ContactPageStyle.newLetterForm} >
+        <NewsLetterForm/>
       </div>
     </div>
+
   )
 }
 
