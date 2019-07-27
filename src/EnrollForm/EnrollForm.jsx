@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import enrollFormStyle from"./EnrollForm.module.css";
 
-const EnrollForm = ({onSubmit, degrees}) => {
+const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
   return (
        <form className={enrollFormStyle.form} onSubmit={onSubmit}>
 
@@ -123,7 +123,7 @@ const EnrollForm = ({onSubmit, degrees}) => {
            <div className={enrollFormStyle.checkbox}   > 
                {degrees.map((degree, index) => (
                 <p key={index}>
-                  <input type="checkbox" name="Preferred Degrees"  key={degree.slug} value={degree.title}/>
+                  <input type="checkbox" name="Preferred Degrees"  key={degree.slug} value={degree.title} checked={crtDegree === degree.title}/>
                   {degree.title}
                 </p>
               ))}       
