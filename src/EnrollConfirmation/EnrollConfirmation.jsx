@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import enrollConfirmStyle from"./EnrollConfirmation.module.css";
+import ThankyouPage from "../ThankyouPage/ThankyouPage";
 
 const EnrollConfirmation = ({ form }) => {
   const displayElements = [];
@@ -19,9 +20,16 @@ const EnrollConfirmation = ({ form }) => {
     );
   }
 
-  return (<div className={enrollConfirmStyle.confirmPage}>
-            {displayElements}
-          </div>);
+  return (<div >
+            <div>
+                <ThankyouPage/>
+            </div>
+            <div className={enrollConfirmStyle.confirmPage}>
+              {displayElements}
+            </div>
+          </div>
+          
+          );
 };
 
 EnrollConfirmation.propTypes = {

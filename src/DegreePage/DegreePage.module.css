@@ -21,6 +21,7 @@
     text-align: justify;
     padding: 20px 25%;
     color:  #636262;
+    font-size: 20px;
 }
 
 .secondRow{
@@ -32,6 +33,7 @@
     justify-content: space-evenly;
     background-color: #326cb1;
     padding: 8px;
+    font-size: 20px;
 }
 
 .level {
@@ -48,6 +50,7 @@
     color: rgb(83, 82, 79);
     border-left: 1px solid  rgba(104, 198, 235, 0.274);
     border-right: 1px solid  rgba(104, 198, 235, 0.274);
+    font-size: 20px;
 }
 .schools{
     text-align: left;
@@ -56,7 +59,7 @@
 
 .DegreeTitle{
     color: rgb(83, 82, 79);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .enrollLink{
@@ -87,21 +90,15 @@
 }
 @media screen and (max-width:950px){
     .DegreeTitle{
-        font-size: 19px;
+        font-size: 25px;
     }
-    .Summary{
+    /* .Summary{
         height: 66%;
         text-align:justify;
         font-size: 15px;
-    }
-    
+    } */
 }
-@media (max-width:787px){
-    .Summary{
-        height: 10px;
-        visibility: hidden;
-    }
-}
+
 
 @media  (max-width: 720px) {
    .firstRow {
@@ -111,13 +108,16 @@
       justify-content: center;
     }
     .image{
-        /* text-align: center; */
         width: 110%;
         height: 130%;
     }
     .secondRow{
         display: flex;
         justify-content: space-between;
+        font-size: 25px;
+    }
+    .Summary{
+        font-size: 25px;
     }
 }
 

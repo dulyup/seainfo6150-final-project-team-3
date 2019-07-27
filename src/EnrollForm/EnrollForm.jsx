@@ -5,7 +5,6 @@ import enrollFormStyle from"./EnrollForm.module.css";
 const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
   return (
        <form className={enrollFormStyle.form} onSubmit={onSubmit}>
-
         <div className={enrollFormStyle.oneRow}>
           <div className={enrollFormStyle.left}>
             <label htmlFor="fullName">Full Name</label>

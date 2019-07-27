@@ -1,10 +1,9 @@
 .confirm{
-    padding: 50px;
-    background-color: rgba(104, 198, 235, 0.274);
+    margin: 0 auto;
     color: rgb(83, 82, 79);
     display: flex;
     flex-direction: column;
-
+    background-color: rgb(251, 253, 255);
 }
 
 .firstPara{
