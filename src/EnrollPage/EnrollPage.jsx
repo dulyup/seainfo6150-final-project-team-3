@@ -29,7 +29,7 @@ class EnrollPage extends Component {
         {this.state.form ? (
           <EnrollConfirmation form={this.state.form} />
         ) : (
-          <EnrollForm onSubmit={this.onSubmit} degrees={this.props.degrees}/>
+          <EnrollForm onSubmit={this.onSubmit} degrees={this.props.degrees} crtDegree={this.props.degree.title}/>
         )}</div>
     );
   }
