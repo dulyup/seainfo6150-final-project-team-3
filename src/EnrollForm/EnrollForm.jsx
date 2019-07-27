@@ -11,17 +11,17 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
             <label htmlFor="fullName">Full Name</label>
             <span className={enrollFormStyle.required}>*</span>
           </div>
-          <div className={enrollFormStyle.right}> 
+          <div className={enrollFormStyle.right}>
             <input type="text" name="Full Name" required className={enrollFormStyle.input}/>
           </div>
         </div>
-        
+
         <div className={enrollFormStyle.oneRow}>
           <div className={enrollFormStyle.left}>
             <label htmlFor="emailAddress">Email Address</label>
             <span className={enrollFormStyle.required}>*</span>
           </div>
-          <div className={enrollFormStyle.right} > 
+          <div className={enrollFormStyle.right} >
           <input type="email" id="email" name="Email Address" placeholder="foo@bar.com" className={enrollFormStyle.input}/>
           </div>
         </div>
@@ -40,7 +40,7 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
             </select>
           </div>
         </div>
-  
+
         <div className={enrollFormStyle.oneRow}>
           <div className={enrollFormStyle.left}>
           <label htmlFor="streetAddress" >Street Address</label><span className={enrollFormStyle.required}>*</span>
@@ -58,7 +58,7 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
             <input type="text" name="City" required className={enrollFormStyle.input} />
           </div>
         </div>
-          
+
         <div className={enrollFormStyle.oneRow}>
           <div className={enrollFormStyle.left}>
             <label htmlFor="zipcode" >Zipcode</label><span className={enrollFormStyle.required}>*</span>
@@ -90,7 +90,7 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
           <div className={enrollFormStyle.left}>
             <label htmlFor="gender">Gender</label><span className={enrollFormStyle.required}>*</span>
           </div>
-          <div className={enrollFormStyle.right}> 
+          <div className={enrollFormStyle.right}>
             <select id="gender" name="Gender" required  >
             <option value="none"></option>
             <option value="Female">Female</option>
@@ -105,7 +105,7 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
           <div className={enrollFormStyle.left}>
             <label htmlFor="pronouns">Preferred Pronouns</label><span className={enrollFormStyle.required}>*</span>
           </div>
-          <div className={enrollFormStyle.right}> 
+          <div className={enrollFormStyle.right}>
             <select id="pronouns" name="Pronouns" required >
               <option value="none"></option>
               <option value="she/her">she/her</option>
@@ -120,16 +120,16 @@ const EnrollForm = ({onSubmit, degrees, crtDegree}) => {
           <div className={enrollFormStyle.left}>
             <label htmlFor="degrees">Preferred Degrees</label><span className={enrollFormStyle.required}>*</span>
           </div>
-           <div className={enrollFormStyle.checkbox}   > 
+           <div className={enrollFormStyle.checkbox}   >
                {degrees.map((degree, index) => (
                 <p key={index}>
-                  <input type="checkbox" name="Preferred Degrees"  key={degree.slug} value={degree.title} checked={crtDegree === degree.title}/>
+                  <input type="checkbox" name="Preferred Degrees"  key={degree.slug} value={degree.title} defaultChecked={degree.title===crtDegree}/>
                   {degree.title}
                 </p>
-              ))}       
+              ))}
           </div>
           </div>
-        
+
           <div className={enrollFormStyle.submit}>
               <input type="submit" name="Submit Condition" value="Submit" className={enrollFormStyle.input} />
           </div>
