@@ -6,6 +6,8 @@
     background-color:  rgba(104, 198, 235, 0.274);
     padding-bottom: 50px;
     padding-top: 50px;
+    min-width: 520px;
+    max-width: 950px;
 }
 
 .container p {

@@ -24,6 +24,8 @@
     text-align: center;
     line-height: 30px;
     font-family: Charter;
+    min-width: 520px;
+    max-width: 950px;
 }
 
 .image {
