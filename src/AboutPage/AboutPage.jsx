@@ -7,17 +7,17 @@ const AboutPage = () => {
     <div className={sharedStyle.homeAboutPage}>
       <hr/>
       <p className={sharedStyle.firstPar}>
-        <h3>"</h3>
+        <span className={sharedStyle.initial}>"</span>
         Seattle Technological University is known for the excellence of our
         education, the beauty of our setting, our gifted faculty, and the
         uniqueness of our campus culture.
-        <h3>"</h3>
+        <span className={sharedStyle.initial}>"</span>
       </p>
       <img src={"images/campus1.jpg"} alt={"campus"} className={sharedStyle.image}/>
       <div className={sharedStyle.description}>
         <i>A Transformative Educational Experience </i>
         <p>
-          <h3>E</h3>
+          <span className={sharedStyle.initial}>E</span>
           very year, some 2,400 of the world’s top undergraduate students are
           challenged to exceed their own highest personal and intellectual
           expectations. The mastery our graduates demonstrate across the
@@ -41,7 +41,7 @@ const AboutPage = () => {
         </p>
         <i>The “Full-Engagement” Advantage</i>
         <p>
-          <h3>O</h3>
+          <span className={sharedStyle.initial}>O</span>
           ur full-engagement academic philosophy extends to the running of the
           College itself. The student voice is central to decision-making here;
           students serve on major committees of the Board of Trustees, participate
@@ -60,7 +60,7 @@ const AboutPage = () => {
         </p>
         <i>A Widely Envied Campus Environment</i><br/>
         <p>
-          <h3>T</h3>
+          <span className={sharedStyle.initial}>T</span>
           he sheer sense of scale of the breathtaking natural environment, in which
           buildings are thoughtfully sited, distinguish our physical setting in the
           classically Northwest town of Seattle, Washington.

@@ -10,7 +10,7 @@ const EnrollConfirmation = ({ form }) => {
       continue;
     }
     displayElements.push(
-      <form key={element.name}>
+      <form key={`${element.name}-${i}`}>
         <div key={`enroll-${i}`} className={enrollConfirmStyle.displayText}>
           {element.name}: {element.value}
         </div>

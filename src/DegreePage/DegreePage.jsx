@@ -11,6 +11,10 @@ const DegreePage = ({ degree, schools }) => {
     degree.schools.includes(school.slug)
   );
 
+  // Because level in degrees.json has different format "intermediate","Intermediate",
+  // some even have space "Intermediate ", so we have to format
+  const degreeLevel = degree.level.toUpperCase().trim();
+
   return (
     <div>
       <hr/>
@@ -33,7 +37,7 @@ const DegreePage = ({ degree, schools }) => {
         </div>
 
         <form className={DegreePageStyle.thirdRow}>
-          <div className={changeColor(degree.level)}>{degree.level}</div>
+          <div className={changeColor(degreeLevel)}>{degree.level}</div>
           <ul className={DegreePageStyle.schools} >
             {thisDegreesSchools.map((school, index) => (
               <li key={index}>{school.name}</li>
@@ -49,13 +53,13 @@ const DegreePage = ({ degree, schools }) => {
 
 function changeColor(level) {
   switch (level) {
-    case "Beginner": 
+    case "BEGINNER":
       return DegreePageStyle.green;
-    case "Intermediate":
+    case "INTERMEDIATE":
       return DegreePageStyle.blue;
-    case "Advanced":
+    case "ADVANCED":
       return DegreePageStyle.red;
-    case "Mastery":
+    case "MASTERY":
       return DegreePageStyle.purple;
     default:
       return DegreePageStyle.black;
