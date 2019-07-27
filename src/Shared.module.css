@@ -33,7 +33,7 @@
 }
 
 .description {
-    width: 70%;
+    width: 54%;
     margin: 0 auto;
     padding: 20px;
     line-height: 30px;
@@ -41,7 +41,7 @@
     max-width: 950px;
 }
 
-.description div, .description p{
+.description p{
     text-align: justify;
 }
 
@@ -57,6 +57,5 @@ i {
 }
 
 .initial {
-    display: inline;
     font-size: 30px;
 }
