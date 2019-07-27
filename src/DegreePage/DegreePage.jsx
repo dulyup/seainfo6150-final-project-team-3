@@ -49,7 +49,7 @@ const DegreePage = ({ degree, schools }) => {
 
 function changeColor(level) {
   switch (level) {
-    case "Beginner": 
+    case "Beginner":
       return DegreePageStyle.green;
     case "Intermediate":
       return DegreePageStyle.blue;
@@ -58,7 +58,7 @@ function changeColor(level) {
     case "Mastery":
       return DegreePageStyle.purple;
     default:
-      return DegreePageStyle.black;
+      return DegreePageStyle.blue;
   } 
 }
 
