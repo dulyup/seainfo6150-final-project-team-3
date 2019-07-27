@@ -41,7 +41,7 @@
     max-width: 950px;
 }
 
-.description p {
+.description div, .description p{
     text-align: justify;
 }
 
@@ -56,6 +56,7 @@ i {
 
 }
 
-h3 {
+.initial {
     display: inline;
+    font-size: 30px;
 }
