@@ -14,6 +14,7 @@ const DegreePage = ({ degree, schools }) => {
   // Because level in degrees.json has different format "intermediate","Intermediate",
   // some even have space "Intermediate ", so we have to format
   const degreeLevel = degree.level.toUpperCase().trim();
+  const syllabus = degree.syllabus_pdf_urls;
 
   return (
     <div>
@@ -43,13 +44,21 @@ const DegreePage = ({ degree, schools }) => {
               <li key={index}>{school.name}</li>
             ))}
           </ul>
-          <a className={DegreePageStyle.syllabus} href={degree.syllabus_pdf_urls}> PDF Link</a>
+          <a className={displaySyllabus(syllabus)} href={degree.syllabus_pdf_urls}>PDF Link</a>
         </form>
         {/* You should link from here to the enroll page */}
       </div>
     </div>
   );
 };
+
+function displaySyllabus(syllabus){
+  if(syllabus == null){
+    return DegreePageStyle.syllabusHide;
+  }else{
+     return DegreePageStyle.syllabus;
+  }
+}
 
 function changeColor(level) {
   switch (level) {
