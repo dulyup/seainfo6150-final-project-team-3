@@ -93,6 +93,16 @@ input[type=submit]{
         width: 83% ;
     }
 }
+@media screen and (min-width: 1406px) { 
+  .form{
+      width: 53%;
+  }
+}
+@media screen and (max-width: 1406px) { 
+  .form{
+      width: 65%;
+  }
+}
 
   @media  (max-width: 1017px) {
       .oneRow{
