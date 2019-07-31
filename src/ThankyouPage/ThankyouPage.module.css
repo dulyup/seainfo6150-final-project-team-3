@@ -1,4 +1,8 @@
 .confirm{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 950px;
+    min-width: 500px;
     margin: 0 auto;
     color: rgb(83, 82, 79);
     display: flex;

@@ -1,5 +1,8 @@
 .form {
+  width: 70%;
   margin: 0 auto;
+  max-width: 950px;
+  min-width: 500px;
   border-radius: 5px;
   display: grid;
   grid-template-rows: auto;
@@ -93,18 +96,7 @@ input[type=submit]{
         width: 83% ;
     }
 }
-@media screen and (min-width: 1406px) { 
-  .form{
-      width: 53%;
-  }
-}
-@media screen and (max-width: 1406px) { 
-  .form{
-      width: 65%;
-  }
-}
-
-  @media  (max-width: 1017px) {
+@media  (max-width: 1017px) {
       .oneRow{
           flex-direction: column;
       }

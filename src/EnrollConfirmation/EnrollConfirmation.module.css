@@ -15,8 +15,10 @@
 
 .confirmPage {
     display: grid;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
+    max-width: 950px;
+    min-width: 500px;
     background-color: rgba(104, 198, 235, 0.274);
     justify-content: center;
     padding: 20px;
