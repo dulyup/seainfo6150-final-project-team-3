@@ -1,6 +1,6 @@
 .container{
+    width: 46%;
     margin: 0 auto;
-    width: 70%;
     display: grid;
     grid-template-rows: 1fr 0.2fr 1fr;
     padding-top: 5px;
@@ -91,17 +91,24 @@
 .green {
     color: green;
 }
-@media screen and (max-width:950px){
+@media screen and (min-width: 1590px) { 
+    .container{
+        width: 46%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1590px) { 
+    .container{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:950px){ 
     .DegreeTitle{
         font-size: 25px;
     }
-    /* .Summary{
-        height: 66%;
-        text-align:justify;
-        font-size: 15px;
-    } */
 }
-
 
 @media  (max-width: 720px) {
    .firstRow {

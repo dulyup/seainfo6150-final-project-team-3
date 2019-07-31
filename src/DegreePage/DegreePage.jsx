@@ -18,7 +18,6 @@ const DegreePage = ({ degree, schools }) => {
 
   return (
     <div>
-      <hr/>
       <div className={DegreePageStyle.container}>
         <div className={DegreePageStyle.firstRow}>
           <div className={DegreePageStyle.image} >
