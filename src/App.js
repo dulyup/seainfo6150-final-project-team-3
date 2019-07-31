@@ -89,7 +89,7 @@ function App() {
                    exact
                    render={() => <SignUpPage degrees={degrees} />}
             />
-            <Route component={ErrorPage} />
+            <Route path="/*" component={ErrorPage} />
           </Switch>
         </main>
         <footer>
