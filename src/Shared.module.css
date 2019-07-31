@@ -24,7 +24,6 @@
     text-align: center;
     line-height: 30px;
     font-family: Charter;
-    min-width: 520px;
     max-width: 950px;
 }
 
@@ -39,7 +38,6 @@
     margin: 0 auto;
     padding: 20px;
     line-height: 30px;
-    min-width: 520px;
     max-width: 950px;
 }
 
